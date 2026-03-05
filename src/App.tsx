@@ -21,9 +21,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const WHATSAPP_NUMBER = "5511999999999"; // Placeholder number
-const WHATSAPP_MESSAGE = encodeURIComponent("Olá, quero receber o catálogo de atacado da Miss Mel.");
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+const WHATSAPP_URL = "https://w.app/cjzylr";
 
 const HERO_IMAGES = [
   "https://cdn-op.vesti.mobi/p/350323/49746b9f-a2db-4c8f-9a32-f362d6ee2cd9/73024-lg.webp",
