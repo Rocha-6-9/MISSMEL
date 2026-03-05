@@ -33,7 +33,7 @@ const HERO_IMAGES = [
 ];
 
 const Section = ({ children, className = "", id = "" }: { children: React.ReactNode, className?: string, id?: string }) => (
-  <section id={id} className={`py-16 px-6 md:py-24 ${className}`}>
+  <section id={id} className={`py-16 px-6 md:py-24 lg:px-12 ${className}`}>
     <div className="max-w-7xl mx-auto">
       {children}
     </div>
@@ -61,7 +61,7 @@ const Logo = () => (
       <Crown size={24} className="text-brand-dark mb-[-4px]" strokeWidth={1.5} />
       <div className="w-12 h-[1px] bg-brand-dark mb-1 opacity-50"></div>
     </div>
-    <div className="text-2xl font-display font-medium tracking-[0.15em] text-brand-dark leading-none">
+    <div className="text-2xl lg:text-3xl font-display font-medium tracking-[0.15em] text-brand-dark leading-none">
       MISSMEL
     </div>
   </div>
@@ -84,9 +84,9 @@ export default function App() {
     <div className="min-h-screen bg-brand-bg text-brand-dark font-sans selection:bg-zinc-900 selection:text-white">
       {/* Header / Nav (Minimal) */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-dark/10">
-        <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 h-24 flex items-center justify-between">
           <Logo />
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-8 lg:gap-12">
             <a 
               href={WHATSAPP_URL}
               className="hidden md:flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-dark hover:opacity-70 transition-opacity"
@@ -127,7 +127,7 @@ export default function App() {
             </motion.div>
 
             <div className="flex flex-col md:flex-row items-start gap-8 mb-8">
-              <h1 className="text-6xl md:text-[8vw] font-display font-bold tracking-tighter text-brand-dark leading-[0.85] uppercase italic">
+              <h1 className="text-6xl md:text-[8vw] lg:text-[7vw] xl:text-8xl font-display font-bold tracking-tighter text-brand-dark leading-[0.85] uppercase italic">
                 Moda Feminina <br />
                 no Atacado
               </h1>
@@ -179,7 +179,7 @@ export default function App() {
             transition={{ duration: 1, delay: 0.2 }}
             className="relative"
           >
-            <div className="aspect-[4/5] overflow-hidden shadow-2xl relative group">
+            <div className="aspect-[4/5] lg:aspect-square xl:aspect-[4/5] overflow-hidden shadow-2xl relative group">
               <AnimatePresence mode="wait">
                 <motion.img 
                   key={currentImage}
