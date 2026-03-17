@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const WHATSAPP_URL = "https://w.app/cjzylr";
+const WHATSAPP_URL = "https://contate.me/558193589036";
 
 const HERO_IMAGES = [
   "https://cdn-op.vesti.mobi/p/350323/49746b9f-a2db-4c8f-9a32-f362d6ee2cd9/73024-lg.webp",
